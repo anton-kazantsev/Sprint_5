@@ -20,8 +20,10 @@ class StellarLocators:
     CONSTRUCT_BUTTON = ".//a[@class='AppHeader_header__link__3D_hX']" # Кнопка Конструктор
     LOGO = ".//div[@class='AppHeader_header__logo__2D0X2']" # Нажатие на кнопку Stellar Burgers
 
-    FILLINGS = ".//div[@class='tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect'][2]" # Переход к разделу Начинки
-    SAUCES = ".//div[@class='tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect'][1]" # Переход к разделу Соусы
+    ERROR_PASS = ".//p[text()='Некорректный пароль']" # Ввод некорректного пароля
+
+    FILLINGS = ".//div/span[text()='Начинки']" # Переход к разделу Начинки
+    SAUCES = ".//div/span[text()='Соусы']" # Переход к разделу Соусы
     ROLLS = ".//div/span[text()='Булки']" # Переход к разделу Булки
 
     # Восстановление пароля
@@ -29,10 +31,10 @@ class StellarLocators:
     TEXT_INPUT = "Войти" # Текст войти
 
     # Регистрация нового пользователя
-    REG = "Зарегистрироваться" # Нжаать на текст Зарегистрироваться
-    NAME_REG = ".//fieldset[1]/div/div/input[@name='name']" # Поле ввода имени
-    EMAIL_REG = ".//fieldset[2]/div/div/input[@name='name']" # Поле ввода email
-    PASS_REG =  ".//fieldset[3]/div/div/input[@name='Пароль']" # Поле ввода пароля
+    REG = "Зарегистрироваться" # Нажать на текст Зарегистрироваться
+    NAME_REG = ".//label[text()='Имя']/../input" # Поле ввода имени
+    EMAIL_REG = ".//label[text()='Email']/../input" # Поле ввода email
+    PASS_REG = ".//label[text()='Пароль']/../input" # Поле ввода пароля
     BUT_REG = ".//button[text()='Зарегистрироваться']" # Кнопка Зарегистрироваться
 
     # Заголовки
